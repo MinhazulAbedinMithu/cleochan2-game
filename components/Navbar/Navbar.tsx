@@ -12,7 +12,12 @@ import NavAccountStatus from "./NavAccountStatus";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#e6f7ff] p-2">
+    <nav
+      className="bg-gradient-to-b from-[#DAE3F2] to-[rgba(103, 133, 180, 0.00)] p-2 w-full fixed top-0 z-[999]"
+      style={{
+        background: `linear-gradient(180deg, rgba(103, 133, 180, 0.27) 0%, rgba(103, 133, 180, 0.00) 100%)`,
+      }}
+    >
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center gap-x-[14px]">
           <Image src={imgLogo} alt="Logo" />
