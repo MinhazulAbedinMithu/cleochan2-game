@@ -22,7 +22,7 @@ ol {
 }
 
 .container {
-  @apply max-w-[1048px] mx-auto;
+  @apply max-w-[1200px] w-full mx-auto;
 }
 .text-primary {
   @apply text-[#6C7BA8] font-normal leading-normal;
