@@ -2,3 +2,8 @@
   background: url("../../../assets/moreServices/background.png");
   height: 140px;
 }
+
+/* Progress Bar  */
+.progress-bar {
+  background: url("../../../assets/moreServices/progressBar_bg.png");
+}
