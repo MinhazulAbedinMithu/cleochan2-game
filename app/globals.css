@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
@@ -26,4 +25,59 @@ ol {
 }
 .text-primary {
   @apply text-[#6C7BA8] font-normal leading-normal;
+}
+
+/* custom css  */
+.section-title {
+  background-image: url("../assets/section_title_style.png");
+}
+.tab-btn {
+  background-image: url("../assets/button_bg.png");
+  background-size: cover;
+  background-color: transparent;
+}
+.tab-btn:hover,
+.tab-btn:active {
+  background-color: #3f76fe;
+  background-image: none;
+}
+
+/* game card  */
+.blue-background::before {
+  content: "";
+  position: absolute;
+  max-width: 660px;
+  z-index: -1;
+  width: 100%;
+  height: 340px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+  border-radius: 54px;
+  border: 2px solid #a1c4ed;
+  background: linear-gradient(180deg, #c1e2fe 0%, #99c4f8 100%) no-repeat;
+  /* background-size: 660px 340px; */
+  box-shadow: 10px 20px 24px 0px rgba(101, 123, 169, 0.3);
+}
+.white-background::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 0;
+  transform: translateY(-20px);
+  max-width: 700px;
+  max-height: 454px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: url("../assets/topGames/card_bg.png");
+}
+.card-box-bg {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  background: url("../assets/topGames/card_box_bg.png");
+  background-size: cover;
 }

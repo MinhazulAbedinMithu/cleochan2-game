@@ -52,7 +52,7 @@ const Announce: React.FC = () => {
       setAnnounceData(announceDemoData.splice(0, 3));
   }, []);
   return (
-    <div className="container py-8">
+    <div className="container py-10">
       <div
         className="flex items-center justify-start gap-x-4 relative py-[10px] px-4"
         style={{
