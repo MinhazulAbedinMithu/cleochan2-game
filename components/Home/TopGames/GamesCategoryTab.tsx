@@ -32,11 +32,11 @@ const GamesCategoryTab = () => {
         {tabTitleData.map((tab: TTabTitle, index) => (
           <button
             key={index}
-            className={`w-[120px] h-[40px] flex items-center justify-center bg-transparent rounded-3xl ${
-              selectedTab === tab.title
-                ? "bg-blue text-white font-medium"
-                : "tab-btn text-primary"
-            } text-base  border-none hover:bg-blue hover:text-white font-bold`}
+            className={`w-[120px] h-[40px] flex items-center justify-center rounded-3xl ${
+              selectedTab !== tab.title
+                ? "tab-btn text-primary"
+                : "bg-blue text-white font-medium"
+            } text-base border-none hover:bg-blue hover:text-white font-bold`}
             onClick={() => handleTabSelect(tab.title)}
           >
             {tab.title}

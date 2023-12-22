@@ -7,7 +7,10 @@ import GamesCategoryTab from "./GamesCategoryTab";
 const TopGames = () => {
   return (
     <div className="container py-5">
-      <SectionTitle titleImg={imgTopGamesTitle} tagline="" />
+      <SectionTitle
+        titleImg={imgTopGamesTitle}
+        tagline="您想要的皇创都有，带给您丰富的游戏体验"
+      />
 
       <GamesCategoryTab />
     </div>

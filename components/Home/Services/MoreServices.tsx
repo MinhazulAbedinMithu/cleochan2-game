@@ -33,7 +33,7 @@ const servicesData = [
 ];
 const MoreServices = () => {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-x-10 gap-y-6">
+    <div className="container grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-x-10 gap-y-6 py-14">
       {servicesData.map((item, index) => (
         <div
           key={index}
@@ -43,8 +43,8 @@ const MoreServices = () => {
             <Image src={item.icon} alt={item.title} height={88} width={88} />
           </div>
           <div>
-            <h4>{item.title}</h4>
-            <p>{item.description}</p>
+            <h4 className="text-[#303442] text-[18px]">{item.title}</h4>
+            <p className="text-[#6C7BA8] text-base">{item.description}</p>
           </div>
         </div>
       ))}
