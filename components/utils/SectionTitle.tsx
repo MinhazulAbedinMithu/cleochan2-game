@@ -6,7 +6,7 @@ const SectionTitle: React.FC<{
   tagline: string;
 }> = ({ titleImg, tagline }) => {
   return (
-    <div className="section-title flex flex-col items-center justify-center pt-3">
+    <div className="sm:section-title flex flex-col items-center justify-center pt-3">
       <Image src={titleImg} alt="Top Games" />
       <p className="text-primary">{tagline}</p>
     </div>

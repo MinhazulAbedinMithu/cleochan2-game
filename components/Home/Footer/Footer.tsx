@@ -29,7 +29,7 @@ const Footer = () => {
         <p>
           注册于英属维尔京群岛，是受国际行业协会认可的合法公司。进行注册并娱乐前，请确保您年满18周岁！
         </p>
-        <div className="flex items-center justify-between py-6">
+        <div className="flex flex-col md:flex-row items-center justify-between py-6">
           {footerCompanyData.map((item, index) => (
             <div
               key={index}
