@@ -6,7 +6,7 @@ import imgAvatar from "@/assets/avatar.png";
 
 const NavAccountStatus: React.FC = () => {
   return (
-    <div className="flex items-center justify-end gap-1">
+    <div className="flex flex-col md:flex-row items-center justify-end gap-1">
       <div className="text-primary">
         <div className="flex items-start justify-start gap-x-2">
           <span className="text-base">duan111</span>

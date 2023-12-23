@@ -7,3 +7,12 @@
 .progress-bar {
   background: url("../../../assets/moreServices/progressBar_bg.png");
 }
+
+.svg {
+  stroke-width: 8px;
+  stroke: #62b9ff;
+  filter: drop-shadow(0px 2px 7px rgba(198, 201, 203, 0.2));
+  width: 57.403px;
+  height: 96.001px;
+  flex-shrink: 0;
+}

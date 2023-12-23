@@ -1,12 +1,10 @@
 import React from "react";
 import { teamsData } from "./teamsData";
-import imgCrystal from "@/public/crystal.png";
-import Image from "next/image";
 import BgImageDiv from "@/components/utils/BgImageDiv";
 
 const FeaturedTeams = () => {
   return (
-    <div className="container flex items-center justify-between">
+    <div className="container flex flex-wrap items-center justify-center md:justify-between">
       {teamsData.map((team, index) => (
         <div
           key={index}
