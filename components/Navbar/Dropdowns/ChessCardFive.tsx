@@ -11,7 +11,7 @@ import DropdownCardVr from "./DropdownCardVr";
 
 const ChessCardFive = () => {
   return (
-    <div className="flex items-center justify-center gap-x-3 py-3">
+    <div className="flex items-end justify-center gap-x-3 py-3">
       <DropdownCardVr
         imgCard={imgCard1}
         imgTag={imgTag}

@@ -10,16 +10,18 @@ const DropdownCardVr = ({
   imgBrand,
   title,
   tagline,
+  imgWidth = 210,
+  imgHeight = 172,
   buttonTitle,
   buttonLink,
 }: any) => {
   return (
-    <div className="flex flex-col items-start justify-center">
+    <div className="flex flex-col items-center justify-end">
       <div className="flex gap-x-2">
         {imgTag && <Image src={imgTag} alt="Tag" />}
         {imgTag2 && <Image src={imgTag2} alt="Tag" />}
       </div>
-      <div className="flex pt-[10px] pb-5 items-center justify-center gap-x-2">
+      <div className="flex pt-[10px] pb-5 items-start justify-center gap-x-2">
         <Image
           src={imgBrand}
           alt="Brand"
@@ -31,7 +33,8 @@ const DropdownCardVr = ({
         </div>
       </div>
 
-      <Image src={imgCard} alt="img" width={210} height={172} />
+      <Image src={imgCard} alt="img" />
+      {/* <Image src={imgCard} alt="img" width={imgWidth} height={imgHeight}/> */}
       {/* <NavBlueButton>
           <Link href={buttonLink}>{buttonTitle}</Link>
         </NavBlueButton> */}

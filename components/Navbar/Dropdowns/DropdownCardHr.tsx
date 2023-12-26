@@ -14,7 +14,7 @@ const DropdownCardHr = ({
 }: any) => {
   return (
     <div className="flex items-center justify-between">
-      <Image src={imgCard} alt="img" width={210} height={210} />
+      <Image src={imgCard} alt="img" />
       <div>
         {imgTag && <Image src={imgTag} alt="Tag" />}
         <div className="flex pt-[10px] pb-5 items-start justify-start gap-x-2">

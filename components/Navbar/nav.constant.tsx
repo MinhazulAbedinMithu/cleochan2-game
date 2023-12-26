@@ -7,6 +7,10 @@ import { TNavIconItem, TNavItem } from "./nav.interface";
 import PhysicalThree from "./Dropdowns/PhysicalThree";
 import RealFour from "./Dropdowns/RealFour";
 import ChessCardFive from "./Dropdowns/ChessCardFive";
+import GamingSix from "./Dropdowns/GamingSix";
+import LotterySeven from "./Dropdowns/LotterySeven";
+import ElectroEight from "./Dropdowns/ElectroEight";
+import EntertainNine from "./Dropdowns/EntertainNine";
 
 export const navListData: TNavItem[] = [
   {
@@ -35,18 +39,22 @@ export const navListData: TNavItem[] = [
   {
     slug: "/",
     title: "电竞",
+    dropdownEl: <GamingSix />,
   },
   {
     slug: "/",
     title: "彩票",
+    dropdownEl: <LotterySeven />,
   },
   {
     slug: "/",
     title: "电子",
+    dropdownEl: <ElectroEight />,
   },
   {
     slug: "/",
     title: "娱乐",
+    dropdownEl: <EntertainNine />,
   },
 ];
 
