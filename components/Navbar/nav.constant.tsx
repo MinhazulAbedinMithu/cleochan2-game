@@ -6,6 +6,7 @@ import iconTransfer from "@/assets/icons/transfer-active.png";
 import { TNavIconItem, TNavItem } from "./nav.interface";
 import PhysicalThree from "./Dropdowns/PhysicalThree";
 import RealFour from "./Dropdowns/RealFour";
+import ChessCardFive from "./Dropdowns/ChessCardFive";
 
 export const navListData: TNavItem[] = [
   {
@@ -29,6 +30,7 @@ export const navListData: TNavItem[] = [
   {
     slug: "/",
     title: "棋牌",
+    dropdownEl: <ChessCardFive />,
   },
   {
     slug: "/",
