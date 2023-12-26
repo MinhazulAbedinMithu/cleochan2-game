@@ -5,6 +5,7 @@ import iconWithdraw from "@/assets/icons/withdraw-active.png";
 import iconTransfer from "@/assets/icons/transfer-active.png";
 import { TNavIconItem, TNavItem } from "./nav.interface";
 import PhysicalThree from "./Dropdowns/PhysicalThree";
+import RealFour from "./Dropdowns/RealFour";
 
 export const navListData: TNavItem[] = [
   {
@@ -23,6 +24,7 @@ export const navListData: TNavItem[] = [
   {
     slug: "/",
     title: "真人",
+    dropdownEl: <RealFour />,
   },
   {
     slug: "/",

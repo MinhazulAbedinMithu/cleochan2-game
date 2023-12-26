@@ -42,7 +42,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className=" w-full fixed top-0 z-[999]"
+      className={`w-full fixed top-0 z-[999] ${
+        activeDropdown ? "nav-background-bg" : ""
+      }`}
       style={{
         background: isToggled
           ? "white"
@@ -99,7 +101,7 @@ const Navbar = () => {
           {userInfo ? <NavAccountStatus /> : <NavAuthInfo />}
         </div>
       )}
-      <div className="w-full nav-background-bg">
+      <div className="w-full">
         <div className="container">
           {
             navListData.filter(

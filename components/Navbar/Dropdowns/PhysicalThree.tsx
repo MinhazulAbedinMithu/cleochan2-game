@@ -23,7 +23,7 @@ const PhysicalThree = () => {
         buttonLink="/"
       />
       <DropdownCardHr
-        imgCard={imgCard1}
+        imgCard={imgCard2}
         // imgTag={imgTag}
         imgBrand={imgBrand}
         title="xx体育"
@@ -32,7 +32,7 @@ const PhysicalThree = () => {
         buttonLink="/"
       />
       <DropdownCardHr
-        imgCard={imgCard1}
+        imgCard={imgCard3}
         // imgTag={imgTag}
         imgBrand={imgBrand}
         title="xx体育"
