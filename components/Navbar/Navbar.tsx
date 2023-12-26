@@ -1,19 +1,24 @@
 "use client";
 import Image from "next/image";
+import "./navbar.css";
 import React, { useEffect, useState } from "react";
 
 //import images
 import imgLogo from "@/assets/logo.png";
-import { navIconListData, navListData } from "./nav.constant";
 import { TNavIconItem, TNavItem } from "./nav.interface";
 import NavItem from "./NavItem";
 import NavIconItem from "./NavIconItem";
 import NavAccountStatus from "./NavAccountStatus";
+import NavAuthInfo from "./NavAuthInfo";
+import { navIconListData, navListData } from "./nav.constant";
 
 const Navbar = () => {
   const [navbarBackground, setNavbarBackground] = useState("transparent");
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const [isToggled, setIsToggled] = useState(false);
+
+  const [userInfo, setUserInfo] = useState(null);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -37,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="p-2 w-full fixed top-0 z-[999]"
+      className=" w-full fixed top-0 z-[999]"
       style={{
         background: isToggled
           ? "white"
@@ -46,12 +51,17 @@ const Navbar = () => {
           : `linear-gradient(180deg, rgba(103, 133, 180, 0.27) 0%, rgba(103, 133, 180, 0.00) 100%)`,
       }}
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto p-2 flex items-center justify-between">
         <div className="flex items-center gap-x-[14px]">
           <Image src={imgLogo} alt="Logo" />
-          <div className="hidden md:flex items-center justify-start">
+          <div className="hidden md:flex items-center justify-start gap-x-3">
             {navListData.map((navItem: TNavItem, index: number) => (
-              <NavItem key={index} title={navItem.title} slug={navItem.slug} />
+              <NavItem
+                key={index}
+                title={navItem.title}
+                slug={navItem.slug}
+                setActiveDropdown={setActiveDropdown}
+              />
             ))}
           </div>
         </div>
@@ -70,7 +80,7 @@ const Navbar = () => {
               icon={navIconItem.icon}
             />
           ))}
-          <NavAccountStatus />
+          {userInfo ? <NavAccountStatus /> : <NavAuthInfo />}
         </div>
       </div>
       {isToggled && (
@@ -86,9 +96,18 @@ const Navbar = () => {
               icon={navIconItem.icon}
             />
           ))}
-          <NavAccountStatus />
+          {userInfo ? <NavAccountStatus /> : <NavAuthInfo />}
         </div>
       )}
+      <div className="w-full nav-background-bg">
+        <div className="container">
+          {
+            navListData.filter(
+              (item, index) => item.title === activeDropdown
+            )[0]?.dropdownEl
+          }
+        </div>
+      </div>
     </nav>
   );
 };

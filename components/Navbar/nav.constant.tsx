@@ -4,6 +4,7 @@ import iconDeposit from "@/assets/icons/deposit-active.png";
 import iconWithdraw from "@/assets/icons/withdraw-active.png";
 import iconTransfer from "@/assets/icons/transfer-active.png";
 import { TNavIconItem, TNavItem } from "./nav.interface";
+import PhysicalThree from "./Dropdowns/PhysicalThree";
 
 export const navListData: TNavItem[] = [
   {
@@ -17,6 +18,7 @@ export const navListData: TNavItem[] = [
   {
     slug: "/",
     title: "体育",
+    dropdownEl: <PhysicalThree />,
   },
   {
     slug: "/",
