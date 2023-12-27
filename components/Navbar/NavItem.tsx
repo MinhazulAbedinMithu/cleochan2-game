@@ -6,11 +6,13 @@ import { usePathname } from "next/navigation";
 const NavItem: React.FC<TNavItem> = ({ title, slug, setActiveDropdown }) => {
   const pathname = usePathname();
 
+  console.log({ pathname, slug });
+
   return (
     <div>
       <Link
-        className={`text-primary hover:text-blue border-b-2 border-b-transparent hover:border-b-blue pb-1 leading-none ${
-          pathname === slug && "border-b-blue"
+        className={`text-primary hover:text-blue border-b-2 hover:border-b-blue pb-1 leading-none ${
+          pathname === slug ? "border-b-blue" : "border-b-transparent"
         }`}
         href={slug}
         onMouseOver={() => setActiveDropdown(title)}
