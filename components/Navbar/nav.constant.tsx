@@ -22,22 +22,22 @@ export const navListData: TNavItem[] = [
     title: "皇创反波胆",
   },
   {
-    slug: "/",
+    slug: "/physical",
     title: "体育",
     dropdownEl: <PhysicalThree />,
   },
   {
-    slug: "/",
+    slug: "/casino",
     title: "真人",
     dropdownEl: <RealFour />,
   },
   {
-    slug: "/",
+    slug: "/chess",
     title: "棋牌",
     dropdownEl: <ChessCardFive />,
   },
   {
-    slug: "/",
+    slug: "/gaming",
     title: "电竞",
     dropdownEl: <GamingSix />,
   },

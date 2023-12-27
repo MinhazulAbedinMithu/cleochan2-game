@@ -1,13 +1,13 @@
 import GameGlobalCard from "@/components/utils/GameGlobalCard";
-import React from "react";
-import imgCard from "@/assets/category/lottery/lottery-1.png";
-import imgTitle from "@/assets/category/lottery/title-1.png";
-import imgBranding from "@/assets/category/lottery/branding.png";
+import imgCard from "@/assets/category/gaming/card-1.png";
+import imgTitle from "@/assets/category/gaming/title-1.png";
+import imgBranding from "@/assets/category/gaming/branding.png";
 import imgBrand from "@/assets/category/lottery/brand-2.png";
+import React from "react";
 
-const Lottery = () => {
+const Gaming = () => {
   return (
-    <div>
+    <div className="py-10">
       <GameGlobalCard
         cardImg={imgCard}
         title={imgTitle}
@@ -19,10 +19,10 @@ const Lottery = () => {
           { img: imgBrand, title: "xx电竞" },
         ]}
         btnTitle="进入游戏"
-        btnLink="/lottery"
+        btnLink="/gaming"
       />
     </div>
   );
 };
 
-export default Lottery;
+export default Gaming;
