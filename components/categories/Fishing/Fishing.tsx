@@ -6,7 +6,7 @@ import { fishingTabData, fishingTabTitleData } from "./fishingTabData";
 
 const Fishing = () => {
   return (
-    <div className="container">
+    <div className="container sm:overflow-y-auto">
       <FishingBanner />
       <FishingTab
         tabTitleData={fishingTabTitleData}

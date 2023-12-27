@@ -1,15 +1,19 @@
 import React from "react";
 import { TNavItem } from "./nav.interface";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavItem: React.FC<TNavItem> = ({ title, slug, setActiveDropdown }) => {
+  const pathname = usePathname();
+
   return (
     <div>
       <Link
-        className="text-primary hover:text-blue border-b-2 border-b-transparent hover:border-b-blue pb-1 leading-none"
+        className={`text-primary hover:text-blue border-b-2 border-b-transparent hover:border-b-blue pb-1 leading-none ${
+          pathname === slug && "border-b-blue"
+        }`}
         href={slug}
         onMouseOver={() => setActiveDropdown(title)}
-        // onMouseLeave={() => setActiveDropdown(null)}
       >
         <span className="text-[17px]">{title}</span>
       </Link>

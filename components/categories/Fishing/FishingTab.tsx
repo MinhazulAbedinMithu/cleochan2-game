@@ -46,11 +46,11 @@ const FishingTab = ({ tabTitleData, tabBodyData }: any) => {
             </button>
           ))}
         </div>
-        <div className="w-full flex items-center justify-between gap-x-3 py-4 px-4">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 py-4 px-4 overflw-y-auto">
           {fishingGamesData.map((game, index: number) => (
             <div
               key={index}
-              className="fishing-tab-card w-full md:w-1/3 lg:w-1/3"
+              className="fishing-tab-card sm:w-full md:w-1/3 lg:w-1/3"
             >
               <Image
                 src={game.image}

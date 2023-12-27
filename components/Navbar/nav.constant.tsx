@@ -42,7 +42,7 @@ export const navListData: TNavItem[] = [
     dropdownEl: <GamingSix />,
   },
   {
-    slug: "/",
+    slug: "/lottery",
     title: "彩票",
     dropdownEl: <LotterySeven />,
   },
