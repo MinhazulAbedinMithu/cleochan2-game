@@ -26,7 +26,7 @@ const bannerSliderData = [
 
 const BannerSlider: React.FC = () => {
   return (
-    <div className="w-full bg-[#]">
+    <div className="w-full">
       <Swiper
         spaceBetween={30}
         pagination={{

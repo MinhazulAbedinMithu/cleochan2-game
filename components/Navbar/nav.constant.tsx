@@ -52,7 +52,7 @@ export const navListData: TNavItem[] = [
     dropdownEl: <ElectroEight />,
   },
   {
-    slug: "/",
+    slug: "/fishing-game",
     title: "娱乐",
     dropdownEl: <EntertainNine />,
   },

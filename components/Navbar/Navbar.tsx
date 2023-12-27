@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
       )}
       <div className="w-full">
-        <div className="container">
+        <div className="container" onMouseLeave={() => setActiveDropdown(null)}>
           {
             navListData.filter(
               (item, index) => item.title === activeDropdown
