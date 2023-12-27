@@ -1,12 +1,17 @@
 import React from "react";
 import FishingBanner from "./FishingBanner";
 import "./fishing.css";
+import FishingTab from "./FishingTab";
+import { fishingTabData, fishingTabTitleData } from "./fishingTabData";
 
 const Fishing = () => {
   return (
     <div className="container">
       <FishingBanner />
-      <div className="fishing-tab my-10"></div>
+      <FishingTab
+        tabTitleData={fishingTabTitleData}
+        tabBodyData={fishingTabData}
+      />
     </div>
   );
 };

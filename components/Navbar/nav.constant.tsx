@@ -47,7 +47,7 @@ export const navListData: TNavItem[] = [
     dropdownEl: <LotterySeven />,
   },
   {
-    slug: "/",
+    slug: "/electronic",
     title: "电子",
     dropdownEl: <ElectroEight />,
   },
