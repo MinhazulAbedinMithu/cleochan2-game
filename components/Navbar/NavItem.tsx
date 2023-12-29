@@ -6,8 +6,6 @@ import { usePathname } from "next/navigation";
 const NavItem: React.FC<TNavItem> = ({ title, slug, setActiveDropdown }) => {
   const pathname = usePathname();
 
-  console.log({ pathname, slug });
-
   return (
     <div>
       <Link
