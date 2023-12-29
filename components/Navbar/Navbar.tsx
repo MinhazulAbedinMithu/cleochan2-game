@@ -62,6 +62,7 @@ const Navbar = () => {
               quality={100}
               // width={130.815}
               // height={39.11}
+              priority
             />
           </div>
           <div className="hidden md:flex items-center justify-start gap-x-3">
