@@ -4,7 +4,7 @@ import "./navbar.css";
 import React, { useEffect, useState } from "react";
 
 //import images
-import imgLogo from "@/assets/logo.png";
+import imgLogo from "@/public/logo.png";
 import { TNavIconItem, TNavItem } from "./nav.interface";
 import NavItem from "./NavItem";
 import NavIconItem from "./NavIconItem";
@@ -55,7 +55,15 @@ const Navbar = () => {
     >
       <div className="container mx-auto p-2 flex items-center justify-between">
         <div className="flex items-center gap-x-[14px]">
-          <Image src={imgLogo} alt="Logo" />
+          <div>
+            <Image
+              src={imgLogo}
+              alt="Logo"
+              quality={100}
+              // width={130.815}
+              // height={39.11}
+            />
+          </div>
           <div className="hidden md:flex items-center justify-start gap-x-3">
             {navListData.map((navItem: TNavItem, index: number) => (
               <NavItem

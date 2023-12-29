@@ -9,7 +9,7 @@ const NavIconItem: React.FC<TNavIconItem> = ({
 }): JSX.Element => {
   return (
     <div className="text-primary group">
-      <Image src={icon} alt={title} width={32} height={32} />
+      <Image src={icon} alt={title} width={32} height={32} quality={100} />
       <span className="text-[15px] text-primary hover:text-blue border-b-2 border-b-transparent group-hover:border-b-blue pb-1">
         {title}
       </span>

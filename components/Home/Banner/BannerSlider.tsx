@@ -1,5 +1,5 @@
 "use client";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,7 +32,11 @@ const BannerSlider: React.FC = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className="w-full"
       >
         {bannerSliderData.map((slider, index) => (

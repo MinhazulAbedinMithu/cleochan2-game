@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800&family=Sacramento&family=Vidaloka&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ ol {
   --blue: #3f76fe;
 }
 body {
-  font-family: "Sacramento", cursive !important;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .container {
