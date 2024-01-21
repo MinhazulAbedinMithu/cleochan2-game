@@ -13,7 +13,7 @@ const NavDash = () => {
 
   return (
     <nav className={`w-full fixed top-0 z-[999] bg-[#e7edf5] mb-24`}>
-      <div className="container mx-auto p-2 flex items-center justify-between">
+      <div className="container mx-auto px-2 py-3 flex items-center justify-between">
         <div className="flex items-center gap-x-[20px]">
           <div>
             <Image

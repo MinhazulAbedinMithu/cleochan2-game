@@ -1,0 +1,8 @@
+.wallet-card-small {
+  width: 135px;
+  height: 82px;
+  flex-shrink: 0;
+  padding: 18px 12px 14px 12px;
+  background: url("../../assets/dashboard/card-small-bg.png") top center
+    no-repeat;
+}

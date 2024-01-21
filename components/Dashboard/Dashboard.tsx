@@ -3,6 +3,8 @@ import "./dashboard.css";
 import imgSidebar from "@/assets/dashboard/sidebar.png";
 import TopThreeCard from "./TopThreeCard";
 import Image from "next/image";
+import WalletDetails from "./WalletDetails";
+import TransferDetails from "./TransferDetails";
 
 const Dashboard = () => {
   return (
@@ -17,7 +19,9 @@ const Dashboard = () => {
             <h4 className="py-3 text-black text-base font-medium">钱包金额</h4>
             <TopThreeCard />
           </div>
+          <WalletDetails />
         </div>
+        <TransferDetails />
       </div>
       <div className="max-w-[250px] w-full">RightBar</div>
     </div>
