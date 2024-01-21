@@ -42,7 +42,6 @@ const Navbar = () => {
   const handleToggled = () => {
     setIsToggled((prev) => !prev);
   };
-  console.log({ pathname: pathname.split("/")[1] });
 
   return (
     <>
