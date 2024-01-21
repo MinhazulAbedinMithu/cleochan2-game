@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const [isToggled, setIsToggled] = useState(false);
 
-  const [userInfo, setUserInfo] = useState("sd");
+  const [userInfo, setUserInfo] = useState(null);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;

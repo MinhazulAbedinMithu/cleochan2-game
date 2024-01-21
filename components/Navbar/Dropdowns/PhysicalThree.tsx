@@ -7,7 +7,6 @@ import imgSports from "@/assets/dropdown/physical-sports.png";
 import imgTag from "@/assets/dropdown/backupTag.png";
 import imgBrand from "@/assets/dropdown/brand_logo.png";
 import Image from "next/image";
-import NavBlueButton from "../NavBlueButton";
 import DropdownCardHr from "./DropdownCardHr";
 
 const PhysicalThree = () => {

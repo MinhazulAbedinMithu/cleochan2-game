@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import imgSlider1 from "@/assets/banner/slide_1.png";
+import PopupModal from "@/components/PopupModal/PopupModal";
 const bannerSliderData = [
   {
     img: imgSlider1,

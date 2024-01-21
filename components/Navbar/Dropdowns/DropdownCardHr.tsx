@@ -1,7 +1,9 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import NavBlueButton from "../NavBlueButton";
 import Link from "next/link";
+import PopupModal from "@/components/PopupModal/PopupModal";
+import Modal from "@/components/Dashboard/Modal";
 
 const DropdownCardHr = ({
   imgCard,
@@ -12,6 +14,10 @@ const DropdownCardHr = ({
   buttonTitle,
   buttonLink,
 }: any) => {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const onClose = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   return (
     <div className="flex items-center justify-between">
       <Image src={imgCard} alt="img" />
@@ -29,9 +35,16 @@ const DropdownCardHr = ({
           </div>
         </div>
         <NavBlueButton>
-          <Link href={buttonLink}>{buttonTitle}</Link>
+          <Link href={buttonLink} onClick={onClose}>
+            {buttonTitle}
+          </Link>
         </NavBlueButton>
       </div>
+      <PopupModal
+        isOpen={isModalOpen}
+        onClose={onClose}
+        isFullScreen
+      ></PopupModal>
     </div>
   );
 };
