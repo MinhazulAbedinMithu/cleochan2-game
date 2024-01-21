@@ -9,3 +9,32 @@
   width: 100%;
   height: 90px;
 }
+
+.modal-head {
+  background: url("../../assets/dashboard/modal-bg.png") top left no-repeat;
+}
+
+.modal-body h4 {
+  color: #494d62;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.modal-body p {
+  color: #494d62;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.modal-body h3 {
+  color: #494d62;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
